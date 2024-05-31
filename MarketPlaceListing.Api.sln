@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketPlaceListing.Api", "MarketPlaceListing.Api\MarketPlaceListing.Api.csproj", "{E9861FE6-7299-4189-90DC-6D9788D2AD70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketPlaceListing.Dto", "MarketPlaceListing.Dto\MarketPlaceListing.Dto.csproj", "{4B7ED96C-5D60-445B-AE8C-DE7894AA8E10}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E9861FE6-7299-4189-90DC-6D9788D2AD70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9861FE6-7299-4189-90DC-6D9788D2AD70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9861FE6-7299-4189-90DC-6D9788D2AD70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9861FE6-7299-4189-90DC-6D9788D2AD70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B7ED96C-5D60-445B-AE8C-DE7894AA8E10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B7ED96C-5D60-445B-AE8C-DE7894AA8E10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B7ED96C-5D60-445B-AE8C-DE7894AA8E10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B7ED96C-5D60-445B-AE8C-DE7894AA8E10}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
