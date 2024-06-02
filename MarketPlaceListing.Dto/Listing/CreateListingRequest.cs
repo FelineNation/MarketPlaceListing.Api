@@ -8,7 +8,4 @@ public class CreateListingRequest
     public string? ListedByUserId { get; init; }
     [Required]
     public List<ListingItem>? ListingItems { get; init; }
-    [Required]
-    public DateTime? ListingStartDate { get; init; }
-    public DateTime? ListingEndDate { get; init; }
 }

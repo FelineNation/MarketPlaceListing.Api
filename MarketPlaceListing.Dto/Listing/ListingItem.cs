@@ -17,5 +17,6 @@ public class ListingItem
     public Location? Location { get; init; }
     public List<string>? ImageUrl { get; init; }
     public JsonElement? Description { get; init; }
-
+    public DateTime? ListingStartDate { get; init; } = DateTime.UtcNow;
+    public DateTime? ListingEndDate { get; init; } = DateTime.MaxValue;
 }
