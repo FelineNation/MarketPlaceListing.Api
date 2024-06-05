@@ -1,13 +1,33 @@
+using MarketPlaceListing.Core.Services;
+using MarketPlaceListing.Core.Interfaces;
+using MarketPlaceListing.EventHub;
+using Microsoft.OpenApi.Models;
+using System.Text.Json.Serialization;
+
+// Purpose: Entry point for the application. This file is responsible for setting up the application and registering services. 
+
 var builder = WebApplication.CreateBuilder(args);
 
 var configuration = builder.Configuration;
 
-builder.Services.AddControllers();
-builder.Services.AddSwaggerGen(
-    s=>s.SwaggerDoc("v1", new() { 
-        Title = "MarketPlaceListing.Api", Version = "v1" 
-        })
-    );
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
+    });
+builder.Services.AddSwaggerGen(sg=>
+{
+    sg.SwaggerDoc("v1", new OpenApiInfo { Title = "MarketPlaceListing.Api", Version = "v1"});
+});
+
+// Register services
+builder.Services.AddScoped<IListingService, MarketPlaceListingService>();
+
+// Register event hub
+builder.Services.AddKafkaTopicProducer(configuration);
+
+// Register AutoMapper
+builder.Services.AddAutoMapper(typeof(MarketPlaceListingService).Assembly);
 
 var app = builder.Build();
 
@@ -22,11 +42,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UsePathBase(configuration["BASE_PATH"] ?? "/");
-app.UseHttpsRedirection();
+
+app.MapControllers();
 
 app.Run();
-
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}

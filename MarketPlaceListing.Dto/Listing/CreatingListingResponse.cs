@@ -5,5 +5,7 @@ namespace MarketPlaceListing.Dto;
 public class CreatingListingResponse
 {
     [Required]
-    public string? ListingId { get; set; }
+    public DateTime AsAt { get; set; }
+    [Required]
+    public List<ElasticListingItem>? ListedItems { get; set; }
 }
