@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketPlaceListing.Api", "MarketPlaceListing.Api\MarketPlaceListing.Api.csproj", "{E9861FE6-7299-4189-90DC-6D9788D2AD70}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketPlaceListing.Api", "src/MarketPlaceListing.Api\MarketPlaceListing.Api.csproj", "{E9861FE6-7299-4189-90DC-6D9788D2AD70}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketPlaceListing.Dto", "MarketPlaceListing.Dto\MarketPlaceListing.Dto.csproj", "{4B7ED96C-5D60-445B-AE8C-DE7894AA8E10}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketPlaceListing.Dto", "src/MarketPlaceListing.Dto\MarketPlaceListing.Dto.csproj", "{4B7ED96C-5D60-445B-AE8C-DE7894AA8E10}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketPlaceListing.Core", "MarketPlaceListing.Core\MarketPlaceListing.Core.csproj", "{0B4CA248-4C18-4ADE-B788-959671713FD7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketPlaceListing.Core", "src/MarketPlaceListing.Core\MarketPlaceListing.Core.csproj", "{0B4CA248-4C18-4ADE-B788-959671713FD7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketPlaceListing.DB", "MarketPlaceListing.DB\MarketPlaceListing.DB.csproj", "{6816F5A4-A2D9-4197-B438-BB97F4C88616}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketPlaceListing.DB", "src/MarketPlaceListing.DB\MarketPlaceListing.DB.csproj", "{6816F5A4-A2D9-4197-B438-BB97F4C88616}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketPlaceListing.EventHub", "MarketPlaceListing.EventHub\MarketPlaceListing.EventHub.csproj", "{E1621397-2484-4A33-AA7E-EEA38A65DF2A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketPlaceListing.EventHub", "src/MarketPlaceListing.EventHub\MarketPlaceListing.EventHub.csproj", "{E1621397-2484-4A33-AA7E-EEA38A65DF2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketPlaceListing.Infrastucture", "MarketPlaceListing.Infrastucture\MarketPlaceListing.Infrastucture.csproj", "{9226295A-8AAD-4773-99E2-FDF74915A74E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketPlaceListing.Infrastucture", "src/MarketPlaceListing.Infrastucture\MarketPlaceListing.Infrastucture.csproj", "{9226295A-8AAD-4773-99E2-FDF74915A74E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
